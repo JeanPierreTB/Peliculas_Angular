@@ -1,0 +1,47 @@
+.olvide{
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.olvide .titulo{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.olvide .inputs .nombreinput{
+    color:black;
+    font-weight:bold;
+    font-size: 20px;
+}
+
+.olvide .inputs .input{
+    border-radius: 20px;
+    border-color: blueviolet;
+    width: 300px;
+    height: 30px;
+}
+
+
+.olvide .botones{
+    display: flex;
+    gap:10px;
+}
+
+
+.olvide .botones .boton{
+    margin-top: 20px;
+    background-color: blueviolet;
+    color:white;
+    border-radius: 20px;
+    padding: 10px;
+    width: 100px;
+    border:none;
+    cursor: pointer;
+
+}
+
+

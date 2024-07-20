@@ -1,0 +1,33 @@
+
+<div class="registro">
+    <h1>Registro de usuario</h1> 
+    <div class="inputs">
+        <div>
+            <p class="nombreinput">Usuario</p>
+            <input [(ngModel)]="usuario" class="input" type="text" />
+        </div>
+        <div>
+            <p class="nombreinput">Contrasena</p>
+            <input [(ngModel)]="contrasena"  class="input" type="text" />
+        </div>
+
+        <div>
+            <p class="nombreinput">Telefono</p>
+            <input [(ngModel)]="telefono" class="input" type="number"/> 
+        </div>
+
+        <div>
+            <p class="nombreinput">Direccion</p>
+            <input [(ngModel)]="direccion" class="input" type="text"> 
+        </div>
+
+
+        
+    </div>
+
+    <div class="botones">
+        <button class="boton" (click)="regresar()">Regresar</button>
+        <button class="boton" (click)="registrate()">Registrate</button>
+    </div>
+
+</div>

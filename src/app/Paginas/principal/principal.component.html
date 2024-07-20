@@ -1,0 +1,36 @@
+<div class="principal">
+    <div class="barraarriba">
+        <div class="barrabusqueda">
+            <input class="barra" #searchinput type="text" placeholder="Buscar..." />
+            <i class="fas fa-search search-icon" (click)="buscar(searchinput.value)"></i>
+        </div>
+
+        <div class="selecciontipo">
+            <p>Categoria</p>
+            <select>
+                <option value="">-</option>
+                <option value="Comedia">Comedia</option>
+                <option value="Terror">Terror</option>
+                <option value="Aventura">Aventura</option>
+
+            </select>
+        </div>
+
+        <div class="micuenta">
+            <p>Mi cuenta</p>
+            <i class="fas fa-user account-icon"></i>
+
+        </div>
+
+        
+        
+
+        
+    </div>
+    <div class="peliculas-lista">
+        @for (pelicula of peliculasFiltradas; track pelicula.id) {
+            <app-cajapelicualas [pelicula]="pelicula"></app-cajapelicualas>
+        }
+    </div>
+    
+</div>

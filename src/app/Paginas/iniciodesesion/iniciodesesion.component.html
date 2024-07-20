@@ -1,0 +1,29 @@
+<div class="sesion">
+    <p id="titulo">Sistema de visualizacion de peliculas</p>
+
+    <div class="inputs">
+        <div>
+            <p class="nombreinput">Usuario</p>
+            <input [(ngModel)]="usuario" class="input" type="text" />
+        </div>
+
+        <div>
+            <p class="nombreinput">Contraseña</p>
+            <input [(ngModel)]="contrasena" class="input" type="password" />
+        </div>
+        
+
+        
+    </div>
+    <p>¿Olvido su contraseña? <strong style="cursor: pointer;" (click)="cambiar()">Cambiala aqui</strong></p>
+
+    
+    <div class="botones">
+        <button class="boton" (click)="ingresar()">Ingresar</button>
+        <button class="boton" (click)="registrar()">Registrate</button>
+    </div>
+     
+    
+    
+
+</div>

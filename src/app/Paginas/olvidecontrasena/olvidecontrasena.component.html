@@ -1,0 +1,23 @@
+<div class="olvide">
+    <p class="titulo">Olvido su contraseña</p>
+
+    <div class="inputs">
+
+        <div>
+            <p class="nombreinput">Usuario</p>
+            <input [(ngModel)]="usuario"  class="input" type="text" />
+        </div>
+        <div>
+            <p class="nombreinput">Nueva Contraseña</p>
+            <input [(ngModel)]="contrasena" class="input" type="text"/>
+        </div>
+        
+    </div>
+
+    <div class="botones">
+        <button class="boton" (click)="regresar()">Regresar</button>
+        <button class="boton" (click)="cambiar()">Cambiar</button>
+        
+    </div>
+    
+</div>
